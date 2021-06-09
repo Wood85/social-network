@@ -1,0 +1,10 @@
+.sidebar{
+    flex:  0 1 20%;
+    background-color: #fff;
+    width: 250px;
+    color: #262626;
+    font-weight: 600;
+}
+.sidebar div {
+    padding: 30px;
+}
