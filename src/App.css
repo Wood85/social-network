@@ -1,5 +1,10 @@
 *{
+  box-sizing: border-box;
   font-family: Arial;
+  outline: 0 !important;
+}
+button{
+  border: none;
 }
 .App {
 }
@@ -7,4 +12,8 @@
   display: flex;
   flex-wrap: wrap;
 
+}
+.app-wrapper-content{
+  background-color: #fff;
+  flex:  0 1 80%;
 }

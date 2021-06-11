@@ -4,7 +4,14 @@
     width: 250px;
     color: #262626;
     font-weight: 600;
-}
-.sidebar div {
     padding: 30px;
+}
+.link a{
+    text-decoration: none;
+    color: #262626;
+    display: block;
+    padding: 20px;
+}
+.link a.active {
+    color: #0D58C8;
 }

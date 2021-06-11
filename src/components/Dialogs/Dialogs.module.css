@@ -1,0 +1,21 @@
+.dialogs{
+    display: flex;
+    padding: 45px;
+}
+.dialogsItems{
+    display: flex;
+    flex-direction: column;
+}
+.dialog{
+
+}
+.dialogsItems .active{
+    color: #0D58C8;
+}
+.messages{
+    display: flex;
+    flex-direction: column;
+}
+.message{
+
+}
