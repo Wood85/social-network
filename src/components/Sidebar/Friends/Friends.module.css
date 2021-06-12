@@ -1,0 +1,13 @@
+.friends{
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    color: #0D58C8;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 50px 0px 20px 20px;
+}
+.friendList{
+    display: flex;
+}

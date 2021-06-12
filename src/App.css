@@ -1,7 +1,9 @@
 *{
   box-sizing: border-box;
   font-family: Arial;
-  outline: 0 !important;
+}
+a{
+  text-decoration: none;
 }
 button{
   border: none;

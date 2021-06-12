@@ -1,0 +1,24 @@
+.friend{
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 33.333%;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.avatar{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    color: #262626;
+    font-size: 16px;
+}
