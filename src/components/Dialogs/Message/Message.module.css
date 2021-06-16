@@ -2,7 +2,9 @@
     border: 2px solid #0D58C8;
     border-radius: 5px;
     padding: 3px;
-    max-width: 400px;
+    margin-top: 10px;
+    display: flex;
+    max-width: 80%;
 }
 .message:nth-child(even) {
     align-self:flex-end;

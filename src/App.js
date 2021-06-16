@@ -7,6 +7,7 @@ import {BrowserRouter, Route} from "react-router-dom";
 import News from "./components/News/News";
 import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings";
+import React from "react";
 
 const App = (props) => {
     return (
@@ -15,8 +16,12 @@ const App = (props) => {
                 <Header/>
                 <Sidebar state={props.state.sidebar}/>
                 <div className='app-wrapper-content'>
-                    <Route path='/profile' render={()=><Profile state={props.state.profilePage}/>}/>
-                    <Route path='/dialogs' render={()=><Dialogs state={props.state.dialogsPage}/>}/>
+                    <Route path='/profile' render={()=><Profile profilePage={props.state.profilePage}
+                                                                addPost={props.addPost}
+                                                                updateNewPostText={props.updateNewPostText}/>}/>
+                    <Route path='/dialogs' render={()=><Dialogs dialogsPage={props.state.dialogsPage}
+                                                                addMessage={props.addMessage}
+                                                                updateNewMessageText={props.updateNewMessageText}/>}/>
                     <Route path='/news' component={News}/>
                     <Route path='/music' component={Music}/>
                     <Route path='/settings' component={Settings}/>

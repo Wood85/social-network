@@ -14,3 +14,13 @@
     background-color: #0D58C8;
     transition: all 0.3s ease;
 }
+.entryField{
+    border: 2px solid #B4B7C1;
+    border-radius: 5px;
+    padding: 3px;
+}
+.entryField:hover{
+    border: 2px solid #0D58C8;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}

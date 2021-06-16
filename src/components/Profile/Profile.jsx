@@ -5,7 +5,9 @@ const Profile = (props) => {
     return(
         <main className={classes.profile}>
             <ProfileInfo/>
-            <MyPosts state={props.state.posts}/>
+            <MyPosts profilePage={props.profilePage}
+                     addPost={props.addPost}
+                     updateNewPostText={props.updateNewPostText}/>
         </main>
     )
 };

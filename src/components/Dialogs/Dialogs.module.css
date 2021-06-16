@@ -14,8 +14,41 @@
 .dialogsItems .active{
     color: #0D58C8;
 }
-.messages{
+.messagesWrapper{
     display: flex;
     flex-direction: column;
     width: 85%;
+}
+.messages{
+    display: flex;
+    flex-direction: column;
+}
+.entryField{
+    border: 2px solid #B4B7C1;
+    border-radius: 5px;
+    padding: 3px;
+}
+.entryField:hover{
+    border: 2px solid #0D58C8;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.btnAdd{
+    margin: 10px 0px;
+    font-size: 16px;
+    font-weight: 500;
+    height: 36px;
+    width: 110px;
+    border-radius: 5px;
+    color: #B4B7C1;
+
+}
+.btnAdd:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: #0D58C8;
+    transition: all 0.3s ease;
+}
+.addMessage{
+    padding-top: 30px;
 }
