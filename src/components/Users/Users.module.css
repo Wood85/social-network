@@ -1,0 +1,63 @@
+.users{
+    display: flex;
+    flex-direction: column;
+}
+.user{
+    display: flex;
+    margin: 20px;
+
+}
+.userLeftBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 30px;
+}
+.userPhoto img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.userFollow button{
+    cursor: pointer;
+    background: #0D58C8;
+    color: #fff;
+    line-height: 9px;
+    padding: 9px 10px;
+    border-radius: 5px;
+}
+.userContent{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+.userInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+.userName{
+    color: #262626;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+}
+.userStatus{
+    color: #a1a5b1;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;}
+.userLocation{
+    padding-top: 20px;
+    color: #a1a5b1;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 500;
+    display: flex;
+    justify-content: flex-end;
+}
+.userCountry{}
+.userCity{
+    padding-left: 4px;
+}
