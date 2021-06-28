@@ -2,12 +2,51 @@
     flex:  0 1 100%;
     background-color: #222835;
     color: white;
-    font-size: 17px;
     height: 70px;
     display: flex;
     align-items: center;
     padding: 0 30px;
+    justify-content: space-between;
 }
-.header span {
+.logo{
+    font-size: 17px;
+}
+.logo span {
     color: #114EAB;
+}
+.userLogin{
+    color: #B4B7C1;
+    display: flex;
+    flex-direction: column;
+}
+.userId{
+    color: white;
+}
+.login{
+    display: flex;
+    justify-content: center;
+}
+.email{
+    font-weight: 400;
+    font-size: 12px;
+}
+.btnLogin{
+    cursor: pointer;
+    background-color: #0D58C8;
+    height: 30px;
+    width: 70px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btnLogin:hover {
+    background: transparent;
+    border: 1px solid #0d58c8;
+    transition: background-color .4s;
+}
+.btnLogin a {
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 11px;
 }
