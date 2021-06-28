@@ -2,6 +2,7 @@ import classes from "./Users.module.css";
 import userPhoto from "../../assets/img/user.png";
 import React from "react";
 import {NavLink} from "react-router-dom";
+import * as axios from "axios";
 
 const Users = (props) => {
     const pageCount = Math.ceil(props.totalUserCount/props.pageSize)
@@ -31,8 +32,33 @@ const Users = (props) => {
                                 </div>
                                 <div className={classes.userFollow}>
                                     {u.followed
-                                        ? <button onClick={() => {props.unfollow(u.id)}}>Unfollow</button>
-                                        : <button onClick={() => {props.follow(u.id)}}>Follow</button>}
+                                        ? <button onClick={() => {
+                                            axios.delete(`https://social-network.samuraijs.com/api/1.0/follow/${u.id}`, {
+                                                withCredentials:true,
+                                                headers: {
+                                                    "API-KEY": "99b92852-12a3-4e30-8f17-f5dd26672b7a"
+                                                }
+                                            })
+                                                .then(response => {
+                                                    if(response.data.resultCode===0) {
+                                                        props.unfollow(u.id)
+                                                    }
+                                                })
+                                        }}>Unfollow</button>
+                                        : <button onClick={() => {
+                                            axios.post(`https://social-network.samuraijs.com/api/1.0/follow/${u.id}`, {}, {
+                                                withCredentials:true,
+                                                headers: {
+                                                    "API-KEY": "99b92852-12a3-4e30-8f17-f5dd26672b7a"
+                                                }
+                                            })
+                                                .then(response => {
+                                                    if(response.data.resultCode===0) {
+                                                        props.follow(u.id)
+                                                    }
+                                                })
+
+                                        }}>Follow</button>}
                                 </div>
                             </div>
                             <div className={classes.userContent}>
