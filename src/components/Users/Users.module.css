@@ -27,14 +27,14 @@
     width: 100px;
     border-radius: 50%;
 }
-/*.userFollow button{*/
-/*    cursor: pointer;*/
-/*    background: #0D58C8;*/
-/*    color: #fff;*/
-/*    line-height: 9px;*/
-/*    padding: 9px 10px;*/
-/*    border-radius: 5px;*/
-/*}*/
+.userFollow button{
+    cursor: pointer;
+    background: #0D58C8;
+    color: #fff;
+    line-height: 9px;
+    padding: 9px 10px;
+    border-radius: 5px;
+}
 .userContent{
     display: flex;
     justify-content: space-between;
