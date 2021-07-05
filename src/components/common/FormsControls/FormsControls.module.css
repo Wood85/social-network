@@ -5,3 +5,9 @@
 .formControl .error span {
     color: red;
 }
+.formControl textarea {
+    border: 2px solid red;
+}
+.formSummaryError {
+    color: darkred;
+}
