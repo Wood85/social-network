@@ -1,0 +1,9 @@
+.pageCount{
+    cursor: pointer;
+    max-width: 200px;
+    overflow:hidden ;
+
+}
+.selectedPage{
+    font-weight: 700;
+}
