@@ -1,9 +1,39 @@
-.pageCount{
+.paginator {
+    display: flex;
+    margin: 20px;
     cursor: pointer;
-    max-width: 200px;
-    overflow:hidden ;
-
 }
 .selectedPage{
+    color: #0d58c8;
+}
+.selectedPage:hover{
+}
+.selectedPage,
+.notSelectedPage{
+    margin: 7px 1px;
+    font-weight: 700
+}
+.notSelectedPage:hover{
+    color: #0d58c8;
     font-weight: 700;
+    transition: all .4s;
+}
+.button{
+    font-size: 13px;
+    color: #b4b7c1;
+    cursor: pointer;
+    height: 30px;
+    width: 100px;
+    border-radius: 3px;
+    overflow: hidden;
+    margin: 0 10px;
+}
+.button:hover{
+    background-color: #0d58c8;
+    color: #ffffff;
+    transition: all .4s;
+}
+.void{
+    height: 30px;
+    width: 120px;
 }
