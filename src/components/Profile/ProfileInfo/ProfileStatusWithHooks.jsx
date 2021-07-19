@@ -1,7 +1,6 @@
 import classes from './ProfileInfo.module.css'
 import React, {useEffect, useState} from "react";
 
-
 const ProfileStatusWithHooks = (props) => {
 
     const [editMode, setEditMode] = useState(false)
@@ -33,7 +32,8 @@ const ProfileStatusWithHooks = (props) => {
             }
             {editMode &&
             <div>
-                <input autoFocus={true}
+                <input className={classes.statusInput}
+                        autoFocus={true}
                        onBlur={deactivateEditMode}
                        onChange={onStatusChange}
                        value={status}/>

@@ -3,28 +3,128 @@
     flex-direction: row;
     color: #114EAB;
 }
-.image{
+.imageUser{
     width: 300px;
     height: 300px;
+    overflow: hidden;
+    position: relative;
 }
-.image img {
+.imageUser img  {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
+.imageUser .inputWrapper{
+    display: none;
+}
+.imageUser:hover .inputWrapper{
+    display: block;
+}
+.inputWrapper {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+.inputFile{
+    display: none;
+}
+.inputFileButtonText{
+    padding: 4px;
+    color: #a1a5b1;
+    cursor: pointer;
+    font-size: 14px;
+}
+.inputFileButtonText:hover{
+    transition: all ease .4s;
+    background-color: #0d58c8;
+    color: white;
+    border-radius: 3px;
+}
+.status{
+    margin-top: 10px;
+}
+.status span{
+    display: inline-block;
+    font-size: 15px;
+    margin: 3px;
+}
+.statusInput{
+    width: 300px;
+    font-size: 15px;
+}
+.profileData,
+.ProfileDataForm{
+    display: flex;
+    padding: 10px 0px;
+    margin-left: 20px;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+    color: black;
+}
+.fullNameTitle{
+    font-weight: 700;
+}
+.aboutMeTitle{
+    font-weight: 700;
+}
+.job{
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+.jobDescriptionsTitle{
+    font-weight: 700;
+}
+.contacts{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    margin-right: 120px;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+.contactTitle{
+}
+.contactValue{
+    font-weight: 700;
+}
+.void{
+    display: none;
+}
+.editMode{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.btnEditMode{
+    font-size: 16px;
+    font-weight: 500;
+    height: 36px;
+    width: 100px;
+    border-radius: 5px;
+    color: #B4B7C1;
+}
+.btnEditMode:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: #0D58C8;
+    transition: all 0.3s ease;
+}
 .info{
-    margin-left: 30px;
+
 }
 .fullName{
     font-weight: 700;
     font-size: 25px;
+    color: #114EAB;
 }
 .aboutMe{
     font-weight: 500;
     padding: 30px 0px;
-}
-.contacts{
-    margin-left: 30px;
 }
 .contacts svg{
     height: 40px;
@@ -35,10 +135,13 @@
     cursor: pointer;
     fill:rgba(0,0,0,.6);
 }
-.contacts>div{
-    display: flex;
-    align-items: center;
-}
-.job{}
-.jobDescriptions{
+.btnEditModeSave{
+    font-size: 16px;
+    font-weight: 500;
+    height: 36px;
+    width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #0D58C8;
 }
