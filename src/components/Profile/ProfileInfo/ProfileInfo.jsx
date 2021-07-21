@@ -2,7 +2,6 @@ import classes from './ProfileInfo.module.css';
 import Preloader from "../../common/Preloader/Preloader";
 import ProfileStatusWithHooks from "./ProfileStatusWithHooks";
 import userPhoto from "../../../assets/img/user.png";
-import {SvgFacebook, SvgGithab, SvgInstagram, SvgTwitter, SvgVk, SvgYoutube, SvgWebsite, SvgMainLink} from "../../../assets/svg/svg";
 import {useState} from "react";
 import ProfileDataForm from "./ProfileDataForm";
 
@@ -84,18 +83,6 @@ const ProfileData = ({profile, isOwner, goToEditMode}) => {
 }
 
 const Contact = ({contactTitle, contactValue}) => {
-
-    // const svg = {
-    //     facebook: <SvgFacebook/>,
-    //     vk: <SvgVk/>,
-    //     github: <SvgGithab/>,
-    //     instagram: <SvgInstagram/>,
-    //     twitter: <SvgTwitter/>,
-    //     youtube: <SvgYoutube/>,
-    //     website: <SvgWebsite/>,
-    //     mainLink: <SvgMainLink/>
-    // }
-
 
     if(!contactValue) {
         return <div className={classes.void}></div>

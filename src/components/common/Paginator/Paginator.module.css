@@ -3,6 +3,9 @@
     margin: 20px;
     cursor: pointer;
 }
+.page{
+    width: 30px;
+}
 .selectedPage{
     color: #0d58c8;
 }
