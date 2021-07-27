@@ -11,7 +11,7 @@ let initialState = {
     ],
         messageData: [
     {message: "Hi"},
-    {message: "HelloMKPOKP[LKP[L []Oa-[-----------------------kjkkkkkkkkkkkkkkkkkkkkkkkkkkkjnholjjokAKPAkpALK"},
+    {message: "Hellolp[]l[]l"},
     {message: "Yo"}
 ]
 }

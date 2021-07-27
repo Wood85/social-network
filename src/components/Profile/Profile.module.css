@@ -1,3 +1,10 @@
-.profile{
-    padding: 45px;
+@media (min-width: 1351px) {
+    .profile {
+        padding: 45px;
+    }
+}
+@media (max-width: 1350px) {
+    .profile{
+        padding: 10px;
+    }
 }

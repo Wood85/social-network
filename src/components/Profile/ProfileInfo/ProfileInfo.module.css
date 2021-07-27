@@ -115,7 +115,7 @@
     transition: all 0.3s ease;
 }
 .info{
-
+    padding-right: 10px;
 }
 .fullName{
     font-weight: 700;
@@ -125,15 +125,6 @@
 .aboutMe{
     font-weight: 500;
     padding: 30px 0px;
-}
-.contacts svg{
-    height: 40px;
-    width: 40px;
-    fill:#000;
-}
-.contacts svg:hover{
-    cursor: pointer;
-    fill:rgba(0,0,0,.6);
 }
 .btnEditModeSave{
     font-size: 16px;

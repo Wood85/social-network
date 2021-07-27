@@ -1,0 +1,23 @@
+.login{
+    margin-bottom: 20px;
+}
+.password{
+    margin-bottom: 20px;
+}
+.rememberMe{
+    display: flex;
+    margin-bottom: 20px;
+}
+.btnLogin{
+    cursor: pointer;
+    background-color: #0D58C8;
+    height: 30px;
+    width: 70px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 11px;
+}
